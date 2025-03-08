@@ -10,7 +10,3 @@ class Solution:
                 num=num[:i]
             i-=1
         return("")
-       
-        
-        
-        
