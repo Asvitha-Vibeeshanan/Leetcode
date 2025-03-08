@@ -1,8 +1,13 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-       for i in range(0, len(nums)-1):
-          # print("i = ",i)
-           for j in range(i+1, len(nums)):
-              # print("j = ",j)
-               if (nums[i]+nums[j] == target):
-                   return [i,j]
+       dict = {}
+       for i, num in enumerate(nums):
+        diff = target - num
+        if diff in dict:
+            return [dict[diff],i]
+        dict[num] = i
+
+       
+
+
+
