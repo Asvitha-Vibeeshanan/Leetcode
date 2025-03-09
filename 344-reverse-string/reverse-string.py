@@ -6,6 +6,7 @@ class Solution:
         stack = []
         for i in s:
             stack.append(i)
+            
         i = 0
         while(stack):
             s[i] = stack.pop()
