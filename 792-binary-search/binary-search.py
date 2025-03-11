@@ -9,6 +9,4 @@ class Solution:
                 left += 1
             else:
                 return mid
-        return -1
-
-        
+        return -1  
