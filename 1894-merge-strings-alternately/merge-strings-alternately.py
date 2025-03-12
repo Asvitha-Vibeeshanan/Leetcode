@@ -7,7 +7,6 @@ class Solution:
                 word3 = word3 + word1[l] + word2[l]
                 l = l+1
             return word3
-
         else:
             while(len(word1)!= l and len(word2)!= l):
                 word3 = word3 + word1[l] + word2[l]
