@@ -10,5 +10,3 @@ class Solution:
             return word3+word1[len(word2):]
         else:
             return word3+word2[len(word1):]
-    
-    
