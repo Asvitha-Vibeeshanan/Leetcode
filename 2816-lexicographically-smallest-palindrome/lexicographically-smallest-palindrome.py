@@ -1,7 +1,5 @@
 class Solution:
     def makeSmallestPalindrome(self, s: str) -> str:
-        if len(s) == 1:
-            return s
         l = 0
         r = len(s) - 1
         s = list(s)
@@ -14,10 +12,3 @@ class Solution:
             l = l+1
             
         return ''.join(s)
-
-
-        
-            
-
-
-        
