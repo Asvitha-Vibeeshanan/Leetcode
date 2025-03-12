@@ -1,7 +1,6 @@
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
-        l = 0
-        r = 0
+        l,r = 0,0
         word3 = ''
         while(len(word1)!= l and len(word2)!= r):
             word3 = word3 + word1[l] + word2[r]
