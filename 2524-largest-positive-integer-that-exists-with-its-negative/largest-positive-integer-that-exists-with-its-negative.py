@@ -9,16 +9,11 @@ class Solution:
                     dict1[num] = 1
                 else:
                     dict1[num] += 1
-        
             else:
                 if num not in dict2:
                     dict2[num] = 1
                 else:
                     dict2[num] += 1
-
-        print(dict1)
-        print(dict2)
-
         for key, value in dict1.items():
             if abs(key) in dict2:
                 arr.append(abs(key))
