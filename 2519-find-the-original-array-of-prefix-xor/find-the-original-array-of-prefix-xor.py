@@ -8,5 +8,3 @@ class Solution:
             else:
                 arr[i] = pref[i-1] ^ pref[i] 
         return arr
-            
-        
