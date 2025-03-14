@@ -1,9 +1,8 @@
 class Solution:
     def transformArray(self, nums: List[int]) -> List[int]:
-        arr = []
-        for num in nums:
-            if num%2 == 0:
-                arr.append(0)
+        for i in range(len(nums)):
+            if nums[i]%2 == 0:
+                nums[i] = 0
             else:
-                arr.append(1)
-        return sorted(arr)   
+                nums[i] = 1
+        return sorted(nums)
