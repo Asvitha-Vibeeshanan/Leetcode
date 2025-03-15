@@ -12,3 +12,4 @@ class Solution:
                     count = count+1
             res.append(count)
         return res
+        
