@@ -5,9 +5,6 @@ class Solution:
         for num in nums:
             sum1 = sum1 + num
             while(num):
-                digit = num%10
-                sum2 = sum2 + digit
+                sum2 = sum2 + num%10
                 num = num//10
         return sum1 - sum2
-
-        
