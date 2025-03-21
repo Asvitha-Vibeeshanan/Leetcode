@@ -5,9 +5,8 @@ class Solution:
         r = len(nums)-1
         max = 0
         while(l<r):
-            sum = nums[l] + nums[r]
-            if sum > max:
-                max = sum
+            if (nums[l] + nums[r]) > max:
+                max = nums[l] + nums[r]
             l = l+1
             r = r-1
         return max 
