@@ -6,3 +6,6 @@ class Solution:
             if nums[i] == target:
                 arr.append(i)
         return arr
+
+
+        
