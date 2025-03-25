@@ -7,3 +7,4 @@ class Solution:
         for i in range(len(arr)):
             arr[i] = dict[arr[i]]
         return arr 
+        
