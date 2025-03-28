@@ -12,4 +12,3 @@ class Solution:
                     max = diff
                 r = r+1 
         return max
-
