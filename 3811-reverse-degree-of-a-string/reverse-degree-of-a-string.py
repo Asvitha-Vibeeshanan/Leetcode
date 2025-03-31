@@ -4,5 +4,4 @@ class Solution:
         for i in range(0,len(s)):
             position = (i+1) * (26 - (ord(s[i]) - ord('a')))
             sum = sum + position
-        return sum
-        
+        return sum  
