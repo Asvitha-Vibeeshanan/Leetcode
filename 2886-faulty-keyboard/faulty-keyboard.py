@@ -1,6 +1,5 @@
 class Solution:
     def finalString(self, s: str) -> str:
-        i = 0
         while(s.find("i") > 0):
             i = s.find("i")
             sub = s[:i]
