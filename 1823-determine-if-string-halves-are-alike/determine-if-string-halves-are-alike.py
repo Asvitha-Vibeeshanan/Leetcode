@@ -11,5 +11,4 @@ class Solution:
                 count1 = count1 + 1
             if string2[i] in arr:
                 count2 = count2 + 1
-        
         return count1 == count2
