@@ -12,5 +12,3 @@ class Solution:
             curr.next = ListNode(gcd(n1,n2), curr.next)
             curr = curr.next.next
         return head
-
-        
