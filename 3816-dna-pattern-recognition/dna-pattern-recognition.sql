@@ -1,10 +1,10 @@
-SELECT 
-    sample_id,
-    dna_sequence,
+select 
+    sample_id,  
+    dna_sequence, 
     species,
-    CASE WHEN dna_sequence LIKE 'ATG%' THEN 1 ELSE 0 END AS has_start,
-    CASE WHEN dna_sequence LIKE '%TAA' OR dna_sequence LIKE '%TAG' OR dna_sequence LIKE '%TGA' THEN 1 ELSE 0 END AS has_stop,
-    CASE WHEN dna_sequence LIKE '%ATAT%' THEN 1 ELSE 0 END AS has_atat,
-    CASE WHEN dna_sequence REGEXP 'G{3,}' THEN 1 ELSE 0 END AS has_ggg
-FROM Samples
-ORDER BY sample_id ASC;
+    case when dna_sequence like "ATG%" then 1 else 0 end as has_start,
+    case when dna_sequence like "%TAA" or  dna_sequence like "%TAG" or  dna_sequence like "%TGA" then 1 else 0 end as has_stop,
+    case when dna_sequence like "%ATAT%" then 1 else 0 end as has_atat,
+    case when dna_sequence REGEXP 'G{3,}' then 1 else 0 end as has_ggg
+from samples
+order by sample_id asc
